@@ -382,12 +382,13 @@ class _HomePageState extends State<HomePage> {
                                       child: GestureDetector(
                                         onTap: () =>
                                             setState(() => likedIndex = index),
-                                        child: Icon(CupertinoIcons.heart_fill,
-                                            size: 25,
-                                            color: likedIndex == index
-                                                ? BooksArenaColors.orangeColor
-                                                : BooksArenaColors
-                                                    .lightGreyColor),
+                                        child: Icon(
+                                          CupertinoIcons.heart_fill,
+                                          size: 25,
+                                          color: likedIndex == index
+                                              ? BooksArenaColors.orangeColor
+                                              : BooksArenaColors.lightGreyColor,
+                                        ),
                                       ),
                                     ),
                                   ],
